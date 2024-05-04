@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">APARNA</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+            <li><a href="#" onclick="scrollToSection(event, 'home')">Home</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'about')">About</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'skills')">Skills</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'projects')">Projects</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'contact')">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section" id="home">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I am <span>Aparna<br />a</span> Python Developer
+          </h1>
+          <p class="description">
+            Welcome to my portfolio! My name is Aparna Sharma, a skilled and
+            hardworking python developer. I am also interested in Data Analytics field. 
+          </p>
+        </div>
+        <div class="image">
+          <img src="aparna sharma.jpg" alt="profile" />
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle"></p>
+            <h1 class="title">
+              I am<span> Aparna Sharma<br /></span> About me :
+            </h1>
+            <p class="description">
+                I graduated from Ajay Kumar Garg Engineering College in the stream
+                of Information Technology with a CGPA of 8.92. I have done my intermediate
+                from Delhi Public School Ghaziabad.
+            </p>
+          </div>
+          <div class="image">
+            <img src="aparna sharma.jpg" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <section class="section" id="skills">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle"></p>
+            <h1 class="title">
+              My <span>Skills </span> are:
+              
+            </h1>
+            <p class="description">
+                HTML5<br/>
+                CSS<br/>
+                JavaScript<br/>
+                Python<br/>
+                C++<br/>
+                SQL<br/>
+                Excel<br/>
+                Tableau<br/>
+            </p>
+          </div>
+          <div class="image">
+            <img src="aparna sharma.jpg" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <section class="section" id="projects">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle"></p>
+            <h1 class="title">
+              My <span>Projects </span> are as follows:
+              
+            </h1>
+            <p class="description">               
+                Portfolio Website<br/>
+                Fitness Tracker<br/>
+                Air Quality Dashboard<br/>
+                To Do List<br/>
+                Netflix Clone<br/>
+                Snake game<br/>                
+            </p>
+          </div>
+          <div class="image">
+            <img src="aparna sharma.jpg" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle">Contact Details</p>
+            <h1 class="title">
+              My <span>Contact </span> info are :
+              
+            </h1>
+            <p class="description">               
+                Mobile : 9559548733<br/>
+                Email : aparna21@gmail.com<br/>
+                                
+            </p>
+          </div>
+          <div class="image">
+            <img src="aparna sharma.jpg" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <script>
+        function scrollToSection(event, sectionId) { 
+            event.preventDefault();
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('check').checked = false; // Close the navbar on mobile after click
+        }
+    </script>
+  </body>
+</html>
